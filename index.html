@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Hand Gesture App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+     
+       <h3 class="btn btn-warning heading">Hand Jesture App
+       <br><span>&#128077</span>
+       <span>&#128078</span>
+       <span>&#128079</span>
+       <span>&#128080</span>
+       <span>&#128400</span>
+       <span>&#128406</span>
+    
+
+     </h3>
+     <h4 class="text-default">*Note: when taking picture of hand, do not show face and show hand up close(but do not hide any parts of the hand.)</h4>
+      <br><br>
+
+      <p style="font-size: 22px;">Take a picture of your hand to generate gesture.<br>
+        <b>The model is trained to identify the following gestures</b>
+        <br>
+     <span>&#128076</span>|<span>&#129304</span>
+      </p>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>webcam view-</label>
+        <div id="camera"></div>
+        <br><br>
+        <button onclick="take_snapshot()" class="btn btn-info">Capture image</button>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>prediction:</label>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+ <div id="result"></div>
+ <br><br>
+ <button class="btn btn-info" onclick="check()">Identify image</button>
+
+
+      </div>
+      <h3 id="result_object_name"></h3>
+      <h3 id="result_object_accuracy"></h3>
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>

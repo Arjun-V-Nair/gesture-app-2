@@ -1,0 +1,36 @@
+body
+{
+  color: white;
+  background-image: linear-gradient(to right top, #000000, #ff7300, #ff0000, #720000, #000000);
+}
+
+#result
+{
+  border: 2px dashed black;
+  width: 304px;
+  height: 233px; 
+}
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
+}
+.btn-warning{
+background-image: linear-gradient(to right top, #daa700, #ffd700, #ff7300, #ff0000, #b40000);
+height: fit-content;
+width: fit-content;
+color: blue;
+font-weight: bolder;
+}
+.heading{
+  font-size: 40px;
+  border-radius: 10px;
+  letter-spacing: 10px;
+}
